@@ -1,4 +1,4 @@
-package split-screen - fps
+package split_screen_fps
 
 import rl "vendor:raylib"
 
@@ -82,6 +82,7 @@ main :: proc() {
 			rl.UpdateCamera(&players[1].camera, .FIRST_PERSON)
 		}
 
+    if rl.IsKeyDown(rl.KeyboardKey.)
 		for &player in players {
 			player.transform.position = player.camera.position - {0, 0.5, 0}
 		}
