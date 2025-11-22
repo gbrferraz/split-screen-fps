@@ -1,4 +1,4 @@
-package undeads
+package split-screen - fps
 
 import rl "vendor:raylib"
 
@@ -124,8 +124,8 @@ main :: proc() {
 		rl.EndDrawing()
 	}
 
-  for player in players {
-    rl.UnloadRenderTexture(player.render_texture)
-  }
+	for player in players {
+		rl.UnloadRenderTexture(player.render_texture)
+	}
 	rl.CloseWindow()
 }
